@@ -1,4 +1,4 @@
-## Git Repository Backup Script
+## Comprehensive Git Repository Backup and Automation Guide
 ### Introduction  
 Backing up your Git repositories is a crucial part of version control management. It ensures that your work remains safe and accessible even in the event of unforeseen data loss, such as accidental deletions, hardware failures, or repository corruption. Automating this process saves time, reduces manual intervention, and guarantees regular updates.  
 
@@ -24,8 +24,8 @@ This task involves creating an automated backup system for your Git repository o
 ### Step-by-Step Overview  
 #### Step 1: Create Backup Folder  
 Create a folder named `GitHub Backup Folder` to store your backup files.  
-![Screenshot 2025-02-02 135527](https://github.com/user-attachments/assets/b8fc8e24-2fc9-45e2-bfa3-8e7115a7ca72)
 
+![Screenshot 2025-02-02 135527](https://github.com/user-attachments/assets/b8fc8e24-2fc9-45e2-bfa3-8e7115a7ca72)
 #### Step 2: Create a Batch Script  
 1. Open Notepad and type the following script.  
 2. Replace `REPO_URL` with your Git repository URL.  
@@ -49,43 +49,43 @@ rmdir /s /q repo_backup_%DATE%
 echo Backup completed on %DATE%
 exit
 ```  
-![Screenshot 2025-02-01 223851](https://github.com/user-attachments/assets/cdeac238-cdea-4127-b8c5-c895e3cb4edf)
 
+![Screenshot 2025-02-01 223851](https://github.com/user-attachments/assets/cdeac238-cdea-4127-b8c5-c895e3cb4edf)
 #### Step 3: Open Task Scheduler  
 1. Press `Win + R` on your keyboard.  
 2. Type `taskschd.msc` and press `Enter`.  
-![Screenshot 2025-02-01 223923](https://github.com/user-attachments/assets/f7594f4a-6fed-462d-ae7d-7461f8c630a6)
 
+![Screenshot 2025-02-01 223923](https://github.com/user-attachments/assets/f7594f4a-6fed-462d-ae7d-7461f8c630a6)
 #### Step 4: Create a Basic Task  
 1. Click on **Create Basic Task** in the right panel.  
 2. Enter a name like **GitRepoBackup** and a description.  
 3. Click **Next**.  
-![Screenshot 2025-02-01 224114](https://github.com/user-attachments/assets/0f468c80-254e-4121-a19e-86e652f907b3)
 
+![Screenshot 2025-02-01 224114](https://github.com/user-attachments/assets/0f468c80-254e-4121-a19e-86e652f907b3)
 #### Step 5: Schedule the Task  
 4. Choose **Daily** and click **Next**.  
 5. Set the start date and time.  
 6. Click **Next**.  
-![Screenshot 2025-02-01 224128](https://github.com/user-attachments/assets/697c2f1f-f4f8-4712-b324-95fa22e79955)
 
+![Screenshot 2025-02-01 224128](https://github.com/user-attachments/assets/697c2f1f-f4f8-4712-b324-95fa22e79955)
 #### Step 6: Set the Action  
 7. Choose **Start a Program** and click **Next**.  
 8. Browse and select your `backup.bat` file.  
 9. Click **Next** and then **Finish**.  
-![Screenshot 2025-02-01 224246](https://github.com/user-attachments/assets/a295419e-fe88-4dde-a829-fe2334003c2e)
 
+![Screenshot 2025-02-01 224246](https://github.com/user-attachments/assets/a295419e-fe88-4dde-a829-fe2334003c2e)
 #### Step 7: Run the Task  
 10. In **Task Scheduler Library**, find your task.  
 11. Right-click and select **Run**.  
-![image](https://github.com/user-attachments/assets/72f3b9f3-0a5b-4bd5-8954-8d0cc6874abe)
 
+![image](https://github.com/user-attachments/assets/72f3b9f3-0a5b-4bd5-8954-8d0cc6874abe)
 #### Step 8: Verify Backup  
 Check your `GitHub Backup Folder` to ensure the files are stored correctly.  
+
 ![Screenshot 2025-02-01 225258](https://github.com/user-attachments/assets/d5378c9e-a378-4c10-bc92-28efc2743237)
 ![Screenshot 2025-02-01 224636](https://github.com/user-attachments/assets/b53ccdb5-67e4-4940-bf19-1991ca5fda47)
-
 ### Outcomes  
 By completing this Proof of Concept (PoC) of automating Git repository backups, you will:  
-12. **Successfully implement a backup system for Git repositories**: Automate the process of creating daily backups for your Git repositories, ensuring that all updates and changes are securely stored in a local folder.  
-13. **Master the use of batch scripting for task automation**: Learn to create and execute a `.bat` script that clones, pulls updates, and compresses a Git repository into timestamped backup archives.  
-14. **Understand Task Scheduler's automation capabilities**: Gain practical experience with Task Scheduler, learning how to set triggers, define actions, and configure conditions to automate repetitive tasks seamlessly on a Windows system.  
+- **Successfully implement a backup system for Git repositories**: Automate the process of creating daily backups for your Git repositories, ensuring that all updates and changes are securely stored in a local folder.  
+- **Master the use of batch scripting for task automation**: Learn to create and execute a `.bat` script that clones, pulls updates, and compresses a Git repository into timestamped backup archives.  
+- **Understand Task Scheduler's automation capabilities**: Gain practical experience with Task Scheduler, learning how to set triggers, define actions, and configure conditions to automate repetitive tasks seamlessly on a Windows system.  
