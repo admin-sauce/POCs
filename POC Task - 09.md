@@ -65,3 +65,4 @@ After following these steps, you should achieve the following:
 
 ### Conclusion  
 Setting up an EC2 instance and accessing it via SSH is a fundamental skill in cloud computing. This guide provides a step-by-step approach to launching a virtual machine, securing it, and managing it effectively. By following these steps, you can leverage AWS EC2 to deploy and manage cloud-based applications efficiently.  
+
