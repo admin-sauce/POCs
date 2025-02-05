@@ -4,7 +4,6 @@
 IAM (Identity and Access Management) is a core service in AWS that allows you to manage access to AWS resources securely. With IAM, you can create and manage AWS users, groups, and roles, and assign them specific permissions. 
 
 In this document, we will walk through the process of creating an IAM role, attaching it to an EC2 instance, and testing restricted/allowed actions to verify the permissions.
-
 ### Objectives
 - Understand how to create IAM roles in AWS.
 - Attach IAM roles to EC2 instances.
@@ -17,7 +16,6 @@ In this document, we will walk through the process of creating an IAM role, atta
 - **Least Privilege:** By granting only the necessary permissions, you ensure your EC2 instance has only the required level of access, reducing the risk of unauthorized actions.
 
 ### Steps to Set Up IAM Roles and Permissions
-
 #### Step 1: Create an IAM Role
 1. Sign in to the AWS Management Console and navigate to the IAM service.
 2. In the left sidebar, click **Roles**, then click **Create role**.
