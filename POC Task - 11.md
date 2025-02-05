@@ -65,4 +65,4 @@ In this document, we will walk through the process of creating an IAM role, atta
 - **Improved Security and Compliance:** Ensuring that only required permissions are assigned, reducing potential security risks.
 - **Scalability and Manageability:** IAM roles streamline permission management across multiple EC2 instances without manual credential handling.
 
-By following this guide, you will successfully configure an IAM role for an EC2 instance, ensuring controlled and secure access to AWS resources.
+By following this guide, you will successfully configure an IAM role for an EC2 instance, ensuring controlled and secure access to AWS resources
