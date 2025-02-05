@@ -103,4 +103,4 @@ http://<EC2-Public-IP>
 - Secure access to your EC2 instance for future updates.  
 - Hands-on experience with AWS, EC2, and basic cloud hosting.  
 
-If everything is set up correctly, your HTML page should load, confirming a successful deployment.
+If everything is set up correctly, your HTML page should load, confirming a successful deployment
